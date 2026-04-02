@@ -19,7 +19,7 @@ st.set_page_config(
 st.title("AI智能伴侣")
 
 # logo
-st.logo("resources/logo.png")
+st.logo("/Users/lx/Desktop/lk/Study/py/PythonProject/py_basics/第三章/resources/logo.png")
 
 # 系统提示词
 system_prompt = "你是一名非常可爱的AI助理，你的名字叫静怡，请你用温柔可爱的语气回答用户的问题。"
