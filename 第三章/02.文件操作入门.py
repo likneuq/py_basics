@@ -31,6 +31,7 @@ f.close()
 
 # =======================释放资源 方式二(最佳实践)==============================
 # 写文件
+# a: append,追加内容;w: write,覆盖内容; ---> 文件不存在，则创建文件
 # 1.打开文件
 with open("resources/静夜思.txt", "w", encoding="utf-8") as f:
     # 2.写入文件内容
@@ -38,4 +39,9 @@ with open("resources/静夜思.txt", "w", encoding="utf-8") as f:
     f.write("窗前明月光，\n")
     f.write("疑是地上霜。\n")
     f.write("举头望明月，\n")
-    f.write("低头思故乡。")
+    f.write("低头思故乡。\n")
+
+# 1.打开文件
+with open("resources/静夜思.txt", "a", encoding="utf-8") as f:
+    # 2.写入文件内容
+    f.write("静夜思（李白）\n\n")
